@@ -69,3 +69,4 @@ function monthlySavings(array, livingCost) {
     if (sum < livingCost) { return "Earn More" }
     else { return savings; }
 };
+

@@ -17,7 +17,7 @@ function checkName(name) {
     const letter = name[name.length - 1].toLowerCase();
 
     //if the last letter of the name is {a,y,i,o,u,w} than return the value is "good name" 
-    if (letter === 'a' || letter === 'y' || letter === 'i' || letter === 'o' || letter === 'u' || letter === 'w') {
+    if (letter === 'a' || letter === 'y' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u' || letter === 'w') {
         return "Good Name"
     }
 
@@ -25,6 +25,7 @@ function checkName(name) {
         return "Bad Name"
     }
 };
+console.log(checkName('RAFEE'));
 
 function deleteInvalids(array) {
     // if input not a array than return "invalid array"
@@ -55,7 +56,6 @@ function password(obj) {
     }
 };
 
-
 function monthlySavings(array, livingCost) {
 
     if (Array.isArray(array) !== true || typeof livingCost !== "number") { return "Invalid Input" };
@@ -70,3 +70,4 @@ function monthlySavings(array, livingCost) {
     else { return savings; }
 };
 
+// console.log(monthlySavings(0,[89,89]));

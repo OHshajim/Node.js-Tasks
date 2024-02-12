@@ -47,3 +47,33 @@ function canPay(array,totalDuo){
     if(sum>=totalDuo){return true }
     else{return false };
 };
+function finalScore ( scores ) {
+    //Write your code here
+      if (Array.isArray(scores) !== true  ) {
+       return "please give score values as array "
+      };
+     
+      let sum = 0 ;
+      for (let score of scores) {
+        sum = sum + score ;
+      }
+        return sum  ;
+    
+    //Don't forget to return
+    }
+    console.log(finalScore([7853,3573,357]));
+    function findMax(arr){
+        //write your code here
+          let [a,b,c] = arr ;
+          if (a>b&&a>c) {
+            return " the largest number is "+a ;
+          }
+            else if (b>a&&b>c) {
+                  return " the largest number is "+b ;
+            }
+          else {
+                return " the largest number is "+c ;
+          }
+        //don't forget to write return
+        }
+    console.log(findMax([7853,3573,357]));
